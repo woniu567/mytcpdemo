@@ -1,0 +1,14 @@
+public class Server {
+
+    ServerSocket ss;
+    {
+        try {
+            ss = new ServerSocket(15000);
+            Socket socket = ss.accept();
+            InputStream inputStream = socket.getInputStream();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
